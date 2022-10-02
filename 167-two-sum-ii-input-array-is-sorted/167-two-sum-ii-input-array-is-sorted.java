@@ -1,5 +1,4 @@
 public class Solution {
-
     public int[] twoSum(int[] numbers, int target) {
         int[] sol = new int[2];
         int left = 0, right = numbers.length - 1, currentSum;
