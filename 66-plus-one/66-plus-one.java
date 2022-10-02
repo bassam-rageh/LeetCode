@@ -11,7 +11,7 @@ class Solution {
             }
             i--;
         }
-        if (digits[0] == 0) {
+        if (add) {
             int[] sol = new int[digits.length + 1];
             sol[0] = 1;
             return sol;
