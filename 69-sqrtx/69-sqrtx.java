@@ -11,7 +11,7 @@ class Solution {
             } else {
                 a = sq + 1;
             }
-            sq = (a + b) / 2;
+            sq = a + (b-a)/2;
         }
         return (int) sq;
     }
