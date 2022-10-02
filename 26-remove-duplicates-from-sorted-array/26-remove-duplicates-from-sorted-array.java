@@ -1,4 +1,5 @@
 class Solution {
+    
     public int removeDuplicates(int[] nums) {
         int pos = 0;
         int max = Integer.MIN_VALUE;
