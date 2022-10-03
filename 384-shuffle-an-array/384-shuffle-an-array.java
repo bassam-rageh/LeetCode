@@ -1,12 +1,10 @@
 class Solution {
 
     int[] arr;
-    int[] shuffled;
     Random random;
 
     public Solution(int[] nums) {
         arr = nums;
-        shuffled = nums.clone();
         random = new Random();
     }
 
@@ -15,6 +13,7 @@ class Solution {
     }
 
     public int[] shuffle() {
+        int[] shuffled = arr.clone();
         for (int i = 0; i < shuffled.length; i++) {
             int rand = random.nextInt(shuffled.length);
             int temp = shuffled[i];
