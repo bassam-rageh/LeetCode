@@ -1,5 +1,4 @@
 class Solution {
-
     int[] arr;
     Random random;
 
