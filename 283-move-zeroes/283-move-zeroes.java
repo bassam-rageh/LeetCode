@@ -1,5 +1,4 @@
 class Solution {
-
     public void moveZeroes(int[] nums) {
         int pos = 0;
         int temp;
