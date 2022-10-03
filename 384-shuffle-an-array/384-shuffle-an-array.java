@@ -1,25 +1,24 @@
 class Solution {
     int[] arr;
     int[] shuffled;
+    Random random;
 
     public Solution(int[] nums) {
         arr = nums;
         shuffled = nums.clone();
+        random = new Random();
     }
 
     public int[] reset() {
-        for (int i = 0; i < shuffled.length; i++) {
-            shuffled[i] = arr[i];
-        }
-        return shuffled;
+        return arr;
     }
 
     public int[] shuffle() {
         for (int i = 0; i < shuffled.length; i++) {
-            int random = new Random().nextInt(shuffled.length);
+            int rand = random.nextInt(shuffled.length);
             int temp = shuffled[i];
-            shuffled[i] = shuffled[random];
-            shuffled[random] = temp;
+            shuffled[i] = shuffled[rand];
+            shuffled[rand] = temp;
         }
         return shuffled;
     }
