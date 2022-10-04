@@ -1,5 +1,4 @@
 class Solution {
-
     public int firstUniqChar(String s) {
         Map<Character, Integer> map = new HashMap<Character, Integer>();
         for (int i = 0; i < s.length(); i++) {
