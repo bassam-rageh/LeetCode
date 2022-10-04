@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    
+
     List<Integer> traversal;
     
     public List<Integer> postorderTraversal(TreeNode root) {
